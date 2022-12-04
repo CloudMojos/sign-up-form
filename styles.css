@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  color: white;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* div.logo, div.main, p, .logo, span, form {
+  border: 5px solid red;
+} */
+
+div.logo {
+  height: 100%;
+  width: 30%;
+  position: relative;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-image: url(src/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.logo > .logo-heading {
+  width: 100%;
+  padding: 45px 0 45px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.logo > .logo-heading > .logo-title {
+  font-family: 'Zen Dots', 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+
+div.main {
+  height: 100vh;
+  width: 70%;
+  background-color: #1d2035;
+}
+
+div.main > .main-content {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+div.main .contents {
+  padding-left: 5rem;
+}
+
+.main-heading {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4rem;
+}
+
+.main-title {
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.main-form {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 3px 10px 1px rgba(17, 17, 17, 0.918);
+  background-color: #252942;
+}
+
+legend {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.input-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+}
+
+.input-control {
+  width: 20vw;
+  margin-right: 100px;
+}
+
+input {
+  position: relative;
+  display: block;
+
+  font-size: 1rem;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  padding: 5px;
+  width: 250px;
+
+  appearance: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input:focus, input:focus-visible{
+  appearance: none;
+  outline: #7737ddaf solid 3px;
+}
+
+input:required::after {
+  font-size: 0.7rem;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: -26px;
+  left: -70px;
+  content: "(*)";
+
+  height: 10px;
+  width: 10px;
+
+  padding: 4px;
+}
+
+button[type="submit"] {
+  height: 40px;
+  width: 170px;
+
+  background-color: #7737dd;
+  box-shadow: 2px 4px 2px 0px rgba(20, 20, 20, 0.644);
+  border-radius: 5px;
+
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:active {
+  background-color: #5725a7;
+}
+/* .main-form, form, form * {
+  border: 5px solid red;
+} */
